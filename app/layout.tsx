@@ -6,8 +6,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "SIS LLC — Strategic Investment & Services",
-  description: "Connecting global manufacturers with exclusive distributors in Burkina Faso and West Africa. Veteran-owned, U.S.-based consulting firm.",
+  title: "SIS LLC International — Strategic Investment & Services",
+  description: "Connecting global manufacturers with exclusive distributors in Burkina Faso and West Africa. Product sourcing worldwide. Veteran-owned, U.S.-based consulting firm.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

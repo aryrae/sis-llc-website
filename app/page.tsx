@@ -286,8 +286,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-[#0A1628]/95 backdrop-blur border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl font-bold tracking-widest text-[#D4A843]" style={{ fontFamily: "var(--font-playfair), serif" }}>SIS</span>
-            <span className="text-xs text-white/50 hidden sm:block">Strategic Investment & Services</span>
+            <img src="/logo-light.svg" alt="SIS LLC International" className="h-10 w-auto" />
           </a>
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-6 text-sm text-white/70">
