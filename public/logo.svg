@@ -1,18 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" fill="none">
   <defs>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#E8C97A"/>
       <stop offset="50%" style="stop-color:#D4A843"/>
       <stop offset="100%" style="stop-color:#B8922F"/>
     </linearGradient>
-    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#0F2240"/>
-      <stop offset="100%" style="stop-color:#0A1628"/>
-    </linearGradient>
   </defs>
 
   <!-- Icon: Abstract globe/connection mark -->
-  <g transform="translate(10, 10)">
+  <g transform="translate(10, 8)">
     <!-- Outer ring -->
     <circle cx="40" cy="40" r="36" stroke="url(#goldGrad)" stroke-width="2.5" fill="none"/>
     <!-- Horizontal arc -->
@@ -24,14 +20,17 @@
   </g>
 
   <!-- SIS lettermark -->
-  <text x="105" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="12" fill="#0A1628">
+  <text x="105" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="12" fill="#0A1628">
     S<tspan fill="url(#goldGrad)">I</tspan>S
   </text>
 
   <!-- Divider line -->
-  <line x1="248" y1="28" x2="248" y2="72" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  <line x1="248" y1="24" x2="248" y2="68" stroke="url(#goldGrad)" stroke-width="1.5"/>
 
   <!-- LLC INTERNATIONAL -->
-  <text x="262" y="45" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="4" fill="#0A1628">LLC</text>
-  <text x="262" y="66" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" letter-spacing="3" fill="#6B7280">INTERNATIONAL</text>
+  <text x="262" y="41" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="4" fill="#0A1628">LLC</text>
+  <text x="262" y="62" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" letter-spacing="3" fill="#6B7280">INTERNATIONAL</text>
+
+  <!-- Tagline -->
+  <text x="210" y="105" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="500" letter-spacing="4" fill="rgba(107,114,128,0.7)" text-anchor="middle">GLOBAL SOURCING &amp; PROCUREMENT</text>
 </svg>

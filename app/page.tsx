@@ -286,7 +286,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-[#0A1628]/95 backdrop-blur border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <img src="/logo-light.svg" alt="SIS LLC International" className="h-10 w-auto" />
+            <img src="/logo-light.svg" alt="SIS LLC International" className="h-16 w-auto" />
           </a>
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-6 text-sm text-white/70">
