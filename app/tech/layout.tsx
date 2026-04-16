@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "SIS Technology — IA & Transformation Digitale au Burkina Faso | AI for West Africa",
-  description: "Solutions IA, automatisation, sites web, marketing digital et formation pour entreprises burkinabes. Tarifs en FCFA. Bilingue FR/EN. Construit au Burkina, livré au monde.",
+  description: "Solutions IA, automatisation, sites web, marketing digital et formation pour entreprises burkinabes. Bilingue FR/EN. Construit au Burkina, livré au monde.",
   keywords: [
     "IA Burkina Faso",
     "intelligence artificielle Ouagadougou",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "SIS Technology — IA & Transformation Digitale pour le Burkina Faso",
-    description: "L'avenir numérique du Burkina Faso. Solutions IA, automatisation, sites web, marketing et formation pour entreprises burkinabes. Tarifs FCFA.",
+    description: "L'avenir numérique du Burkina Faso. Solutions IA, automatisation, sites web, marketing et formation pour entreprises burkinabes.",
     url: "https://sisllc-international.com/tech",
     siteName: "SIS LLC International",
     locale: "fr_BF",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SIS Technology — IA pour le Burkina Faso",
-    description: "Solutions IA, automatisation et marketing digital pour entreprises burkinabes. Tarifs FCFA.",
+    description: "Solutions IA, automatisation et marketing digital pour entreprises burkinabes.",
     images: ["https://sisllc-international.com/logo-tech.svg"],
   },
   robots: {
@@ -91,18 +91,8 @@ export default function TechLayout({ children }: { children: React.ReactNode }) 
       "AI Training",
       "Fintech Integration",
     ],
-    priceRange: "500K FCFA - Custom",
     inLanguage: ["fr", "en"],
     email: "info@sisllc-international.com",
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Tech Service Tiers",
-      itemListElement: [
-        { "@type": "Offer", name: "Starter", price: "500000", priceCurrency: "XOF", description: "Professional website + AI training + 30-day support" },
-        { "@type": "Offer", name: "Growth", price: "2000000", priceCurrency: "XOF", description: "Custom dashboard + automation + marketing strategy + Mobile Money" },
-        { "@type": "Offer", name: "Enterprise", priceSpecification: { "@type": "PriceSpecification", priceCurrency: "XOF" }, description: "Full custom application with dedicated team and SLA" },
-      ],
-    },
   };
   return (
     <>

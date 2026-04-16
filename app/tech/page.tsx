@@ -5,7 +5,7 @@ import { ContactForm } from "../components/ContactForm";
 
 const t = {
   fr: {
-    nav: { opportunity: "Opportunite", services: "Services", arbitrage: "Arbitrage IA", pricing: "Tarifs", contact: "Contact", lang: "EN" },
+    nav: { opportunity: "Opportunite", services: "Services", arbitrage: "Arbitrage IA", contact: "Contact", lang: "EN" },
     hero: {
       tag: "Technologie IA pour l'Afrique de l'Ouest",
       title1: "L'avenir numerique",
@@ -17,7 +17,7 @@ const t = {
         { value: "Bilingue", label: "FR / EN" },
         { value: "AI-Native", label: "Operations modernes" },
         { value: "10x", label: "Plus rapide qu'avant" },
-        { value: "FCFA", label: "Tarifs locaux" },
+        { value: "🇧🇫", label: "Pour le Burkina" },
       ],
     },
     opportunity: {
@@ -80,40 +80,6 @@ const t = {
         { num: "04", title: "Formation & Support", desc: "Nous formons votre equipe et restons disponibles." },
       ],
     },
-    pricing: {
-      tag: "Tarifs",
-      title: "Choisissez Votre Niveau",
-      subtitle: "Tarifs transparents en FCFA et USD. Pas de frais caches.",
-      tiers: [
-        {
-          name: "Demarrage",
-          price: "500K FCFA",
-          priceUsd: "~$830 USD",
-          desc: "Idéal pour debuter votre transformation digitale",
-          features: ["Site web professionnel (5 pages)", "Email professionnel & basics", "Formation IA d'une journee", "Support 30 jours"],
-          cta: "Commencer",
-          highlight: false,
-        },
-        {
-          name: "Croissance",
-          price: "2M FCFA",
-          priceUsd: "~$3,300 USD",
-          desc: "Pour entreprises qui veulent automatiser",
-          features: ["Tableau de bord sur mesure", "Automatisation 2 processus", "Strategie marketing complete", "Formation equipe (3 jours)", "Support 90 jours", "Integration Mobile Money"],
-          cta: "Choisir Croissance",
-          highlight: true,
-        },
-        {
-          name: "Entreprise",
-          price: "Sur Mesure",
-          priceUsd: "Devis personnalise",
-          desc: "Transformation complete pour grandes entreprises",
-          features: ["Application complete sur mesure", "Equipe dediee", "Automatisation multi-processus", "Integrations ERP/CRM", "Support continu", "SLA garanti"],
-          cta: "Discuter du projet",
-          highlight: false,
-        },
-      ],
-    },
     cta: {
       title1: "Prets a",
       title2: "transformer",
@@ -132,7 +98,7 @@ const t = {
     },
   },
   en: {
-    nav: { opportunity: "Opportunity", services: "Services", arbitrage: "AI Arbitrage", pricing: "Pricing", contact: "Contact", lang: "FR" },
+    nav: { opportunity: "Opportunity", services: "Services", arbitrage: "AI Arbitrage", contact: "Contact", lang: "FR" },
     hero: {
       tag: "AI-Native Technology for West Africa",
       title1: "The digital future",
@@ -144,7 +110,7 @@ const t = {
         { value: "Bilingual", label: "EN / FR" },
         { value: "AI-Native", label: "Modern Operations" },
         { value: "10x", label: "Faster Delivery" },
-        { value: "FCFA", label: "Local Pricing" },
+        { value: "🇧🇫", label: "For Burkina Faso" },
       ],
     },
     opportunity: {
@@ -207,40 +173,6 @@ const t = {
         { num: "04", title: "Train & Support", desc: "We train your team and stay available." },
       ],
     },
-    pricing: {
-      tag: "Pricing",
-      title: "Choose Your Level",
-      subtitle: "Transparent pricing in FCFA and USD. No hidden fees.",
-      tiers: [
-        {
-          name: "Starter",
-          price: "500K FCFA",
-          priceUsd: "~$830 USD",
-          desc: "Perfect to start your digital transformation",
-          features: ["Professional website (5 pages)", "Business email & basics", "1-day AI training", "30-day support"],
-          cta: "Get Started",
-          highlight: false,
-        },
-        {
-          name: "Growth",
-          price: "2M FCFA",
-          priceUsd: "~$3,300 USD",
-          desc: "For businesses ready to automate",
-          features: ["Custom dashboard", "2-process automation", "Full marketing strategy", "Team training (3 days)", "90-day support", "Mobile Money integration"],
-          cta: "Choose Growth",
-          highlight: true,
-        },
-        {
-          name: "Enterprise",
-          price: "Custom",
-          priceUsd: "Custom Quote",
-          desc: "Complete transformation for large businesses",
-          features: ["Full custom application", "Dedicated team", "Multi-process automation", "ERP/CRM integrations", "Ongoing support", "SLA guarantee"],
-          cta: "Discuss Project",
-          highlight: false,
-        },
-      ],
-    },
     cta: {
       title1: "Ready to",
       title2: "transform",
@@ -278,7 +210,6 @@ export default function TechPage() {
               <a href="#opportunity" className="hover:text-[#D4A843] transition-colors">{c.nav.opportunity}</a>
               <a href="#services" className="hover:text-[#D4A843] transition-colors">{c.nav.services}</a>
               <a href="#arbitrage" className="hover:text-[#D4A843] transition-colors">{c.nav.arbitrage}</a>
-              <a href="#pricing" className="hover:text-[#D4A843] transition-colors">{c.nav.pricing}</a>
               <a href="#contact" className="hover:text-[#D4A843] transition-colors">{c.nav.contact}</a>
             </div>
             <button
@@ -428,55 +359,6 @@ export default function TechPage() {
                 <div className="w-16 h-16 rounded-full bg-[#0A1628] text-[#D4A843] flex items-center justify-center text-xl font-bold mx-auto mb-4" style={{ fontFamily: "var(--font-playfair), serif" }}>{step.num}</div>
                 <h3 className="font-bold text-[#0A1628] mb-2 text-lg" style={{ fontFamily: "var(--font-playfair), serif" }}>{step.title}</h3>
                 <p className="text-sm text-[#0A1628]/65 leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section id="pricing" className="py-20 bg-[#FAF8F5]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-xs font-semibold tracking-widest text-[#D4A843] uppercase">{c.pricing.tag}</span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-3 text-[#0A1628]" style={{ fontFamily: "var(--font-playfair), serif" }}>{c.pricing.title}</h2>
-            <p className="text-[#0A1628]/60 mt-4">{c.pricing.subtitle}</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {c.pricing.tiers.map((tier, i) => (
-              <div
-                key={i}
-                className={`p-8 rounded-2xl transition-all ${
-                  tier.highlight
-                    ? "bg-[#0A1628] text-white border-2 border-[#D4A843] shadow-2xl scale-105"
-                    : "bg-white border border-[#0A1628]/10 hover:shadow-xl"
-                }`}
-              >
-                {tier.highlight && (
-                  <div className="text-xs font-bold tracking-widest text-[#D4A843] uppercase mb-3">★ Plus Populaire</div>
-                )}
-                <h3 className={`text-2xl font-bold mb-2 ${tier.highlight ? "text-white" : "text-[#0A1628]"}`} style={{ fontFamily: "var(--font-playfair), serif" }}>{tier.name}</h3>
-                <div className={`text-4xl font-bold mb-1 ${tier.highlight ? "text-[#D4A843]" : "text-[#0A1628]"}`} style={{ fontFamily: "var(--font-playfair), serif" }}>{tier.price}</div>
-                <div className={`text-xs mb-4 ${tier.highlight ? "text-white/50" : "text-[#0A1628]/50"}`}>{tier.priceUsd}</div>
-                <p className={`text-sm mb-6 ${tier.highlight ? "text-white/70" : "text-[#0A1628]/65"}`}>{tier.desc}</p>
-                <ul className="space-y-3 mb-8">
-                  {tier.features.map((f, fi) => (
-                    <li key={fi} className={`text-sm flex items-start gap-2 ${tier.highlight ? "text-white/80" : "text-[#0A1628]/75"}`}>
-                      <span className="text-[#D4A843] mt-0.5">✓</span>
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#contact"
-                  className={`block text-center px-6 py-3 rounded-lg font-semibold transition-colors ${
-                    tier.highlight
-                      ? "bg-[#D4A843] text-[#0A1628] hover:bg-[#E8C97A]"
-                      : "border-2 border-[#0A1628] text-[#0A1628] hover:bg-[#0A1628] hover:text-white"
-                  }`}
-                >
-                  {tier.cta}
-                </a>
               </div>
             ))}
           </div>

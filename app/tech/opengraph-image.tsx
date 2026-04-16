@@ -31,7 +31,7 @@ export default function OG() {
           <span style={{ color: "#D4A843" }}>du Burkina Faso</span>
         </div>
         <div style={{ fontSize: 28, color: "rgba(255,255,255,0.75)", maxWidth: 950, lineHeight: 1.4, fontFamily: "Arial, sans-serif" }}>
-          IA · Automatisation · Sites Web · Marketing Digital · Tarifs en FCFA
+          IA · Automatisation · Sites Web · Marketing Digital · Formation
         </div>
         <div style={{ position: "absolute", bottom: 50, left: 80, display: "flex", alignItems: "center", gap: 16, fontFamily: "Arial, sans-serif" }}>
           <div style={{ fontSize: 24, fontWeight: 700, letterSpacing: 6, color: "white" }}>
