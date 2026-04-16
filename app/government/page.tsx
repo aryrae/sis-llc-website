@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ContactForm } from "../components/ContactForm";
 
 const t = {
   en: {
@@ -372,18 +373,11 @@ export default function GovernmentPage() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), serif" }}>
             {c.cta.title1} <span className="bg-gradient-to-r from-[#D4A843] to-[#E8C97A] bg-clip-text text-transparent">{c.cta.title2}</span>{c.cta.title3}
           </h2>
-          <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">{c.cta.subtitle}</p>
-          <div className="grid md:grid-cols-2 gap-6 mb-10 text-left max-w-2xl mx-auto">
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div className="text-xs text-[#D4A843] font-semibold uppercase tracking-widest mb-2">{c.cta.emailLabel}</div>
-              <a href="mailto:info@sisllc-international.com" className="text-white hover:text-[#D4A843] transition-colors break-all text-sm">info@sisllc-international.com</a>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div className="text-xs text-[#D4A843] font-semibold uppercase tracking-widest mb-2">{c.cta.capLabel}</div>
-              <a href="/SIS_Capability_Statement.pdf" className="text-[#D4A843] hover:underline">{c.cta.capValue}</a>
-            </div>
+          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">{c.cta.subtitle}</p>
+          <div className="mb-6 text-center">
+            <a href="/SIS_Capability_Statement.pdf" className="text-[#D4A843] hover:underline text-sm">📄 {c.cta.capLabel}: {c.cta.capValue}</a>
           </div>
-          <a href="mailto:info@sisllc-international.com?subject=Federal%20Contracting%20Inquiry" className="inline-block px-10 py-4 bg-[#D4A843] text-[#0A1628] font-semibold rounded-lg hover:bg-[#E8C97A] transition-colors">{c.cta.button}</a>
+          <ContactForm lang={lang} source="government" variant="dark" />
         </div>
       </section>
 
