@@ -26,7 +26,7 @@ const t = {
       p2: "Our SDVOSB application is currently under SBA review (Application #86547, submitted April 2026). Once certified, we will be eligible for federal sole-source and set-aside contracts across the federal government and the Department of Veterans Affairs Vets First program.",
       cards: [
         { icon: "🎖️", title: "U.S. Army Veteran", desc: "Service-disabled, 100% owner" },
-        { icon: "📍", title: "Round Rock, TX", desc: "National delivery capability" },
+        { icon: "🇺🇸", title: "Nationwide Delivery", desc: "Remote-capable, travel-ready" },
         { icon: "⚙️", title: "Lean & Agile", desc: "Direct principal involvement" },
         { icon: "🤖", title: "Tech-Forward", desc: "AI-assisted operations" },
       ],
@@ -118,7 +118,7 @@ const t = {
       p2: "Notre demande SDVOSB est actuellement examinee par la SBA (Demande #86547, soumise en avril 2026). Une fois certifies, nous serons eligibles aux contrats federaux sole-source et set-aside a travers le gouvernement federal et le programme Vets First du Departement des Anciens Combattants.",
       cards: [
         { icon: "🎖️", title: "Veteran Armee US", desc: "Handicape, proprietaire a 100%" },
-        { icon: "📍", title: "Round Rock, TX", desc: "Capacite de livraison nationale" },
+        { icon: "🇺🇸", title: "Livraison Nationale", desc: "Capacite a distance, pret a voyager" },
         { icon: "⚙️", title: "Allege & Agile", desc: "Implication directe du dirigeant" },
         { icon: "🤖", title: "Tech-Avance", desc: "Operations assistees par IA" },
       ],
@@ -375,14 +375,10 @@ export default function GovernmentPage() {
             {c.cta.title1} <span className="bg-gradient-to-r from-[#D4A843] to-[#E8C97A] bg-clip-text text-transparent">{c.cta.title2}</span>{c.cta.title3}
           </h2>
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">{c.cta.subtitle}</p>
-          <div className="grid md:grid-cols-3 gap-6 mb-10 text-left">
+          <div className="grid md:grid-cols-2 gap-6 mb-10 text-left max-w-2xl mx-auto">
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
               <div className="text-xs text-[#D4A843] font-semibold uppercase tracking-widest mb-2">{c.cta.emailLabel}</div>
               <a href="mailto:info@sisllc-international.com" className="text-white hover:text-[#D4A843] transition-colors break-all text-sm">info@sisllc-international.com</a>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-              <div className="text-xs text-[#D4A843] font-semibold uppercase tracking-widest mb-2">{c.cta.locationLabel}</div>
-              <div className="text-white">{c.cta.locationValue}</div>
             </div>
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
               <div className="text-xs text-[#D4A843] font-semibold uppercase tracking-widest mb-2">{c.cta.capLabel}</div>
