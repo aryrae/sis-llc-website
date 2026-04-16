@@ -198,14 +198,12 @@ export default function GovernmentPage() {
       {/* NAV */}
       <nav className="fixed top-0 w-full z-50 bg-[#0A1628]/95 backdrop-blur border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2">
+          <a href="/government" className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-light.svg" alt="SIS LLC International" className="h-16 w-auto" />
+            <img src="/logo-federal.svg" alt="SIS LLC Federal" className="h-16 w-auto" />
           </a>
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-6 text-sm text-white/70">
-              <a href="/" className="hover:text-[#D4A843] transition-colors">{c.nav.westAfrica}</a>
-              <a href="/government" className="text-[#D4A843] font-medium">{c.nav.federal} <span className="text-[10px]">★</span></a>
               <a href="#about" className="hover:text-[#D4A843] transition-colors">{c.nav.about}</a>
               <a href="#capabilities" className="hover:text-[#D4A843] transition-colors">{c.nav.capabilities}</a>
               <a href="#contact" className="hover:text-[#D4A843] transition-colors">{c.nav.contact}</a>
