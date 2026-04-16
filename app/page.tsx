@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const t = {
   en: {
-    nav: { about: "About", services: "Services", how: "How It Works", contact: "Contact", lang: "FR" },
+    nav: { about: "About", services: "Services", how: "How It Works", contact: "Contact", federal: "Federal", lang: "FR" },
     hero: {
       tag: "Veteran-Owned | U.S.-Based | Bilingual EN/FR",
       title: "Your Bridge to the West African Market",
@@ -137,7 +137,7 @@ const t = {
     },
   },
   fr: {
-    nav: { about: "A Propos", services: "Services", how: "Comment Ca Marche", contact: "Contact", lang: "EN" },
+    nav: { about: "A Propos", services: "Services", how: "Comment Ca Marche", contact: "Contact", federal: "Federal", lang: "EN" },
     hero: {
       tag: "Entreprise Veteran | Basee aux USA | Bilingue EN/FR",
       title: "Votre Passerelle vers le Marche Ouest-Africain",
@@ -294,6 +294,7 @@ export default function Home() {
               <a href="#services" className="hover:text-[#D4A843] transition-colors">{c.nav.services}</a>
               <a href="#how" className="hover:text-[#D4A843] transition-colors">{c.nav.how}</a>
               <a href="#contact" className="hover:text-[#D4A843] transition-colors">{c.nav.contact}</a>
+              <a href="/government" className="hover:text-[#D4A843] transition-colors border-l border-white/10 pl-6">{c.nav.federal} <span className="text-[10px] text-[#D4A843]">★</span></a>
             </div>
             <button
               onClick={() => setLang(lang === "en" ? "fr" : "en")}
