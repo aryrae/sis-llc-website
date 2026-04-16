@@ -277,7 +277,7 @@ const ICONS: Record<string, string> = {
 };
 
 export default function Home() {
-  const [lang, setLang] = useState<"en" | "fr">("en");
+  const [lang, setLang] = useState<"en" | "fr">("fr");
   const c = t[lang];
 
   return (
