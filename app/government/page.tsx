@@ -374,6 +374,17 @@ export default function GovernmentPage() {
             {c.cta.title1} <span className="bg-gradient-to-r from-[#D4A843] to-[#E8C97A] bg-clip-text text-transparent">{c.cta.title2}</span>{c.cta.title3}
           </h2>
           <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">{c.cta.subtitle}</p>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <a href="tel:+15125768597" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:border-[#D4A843]/50 transition-colors text-sm">
+              <span>📞</span> +1 (512) 576-8597
+            </a>
+            <a href="https://wa.me/15125768597?text=Hello%20SIS%20LLC%2C%20I%27d%20like%20to%20discuss%20federal%20contracting%20opportunities." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366]/10 border border-[#25D366]/40 hover:bg-[#25D366]/20 transition-colors text-sm text-[#25D366]">
+              <span>💬</span> WhatsApp
+            </a>
+            <a href="mailto:info@sisllc-international.com?subject=Federal%20Contracting%20Inquiry" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:border-[#D4A843]/50 transition-colors text-sm">
+              <span>✉️</span> info@sisllc-international.com
+            </a>
+          </div>
           <div className="mb-6 text-center">
             <a href="/SIS_Capability_Statement.pdf" className="text-[#D4A843] hover:underline text-sm">📄 {c.cta.capLabel}: {c.cta.capValue}</a>
           </div>

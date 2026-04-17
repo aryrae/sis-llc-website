@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { WhatsAppButton } from "./components/WhatsAppButton";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -64,6 +65,15 @@ const orgJsonLd = {
   url: "https://sisllc-international.com",
   logo: "https://sisllc-international.com/logo-light.svg",
   email: "info@sisllc-international.com",
+  telephone: "+1-512-576-8597",
+  contactPoint: [{
+    "@type": "ContactPoint",
+    telephone: "+1-512-576-8597",
+    contactType: "customer service",
+    email: "info@sisllc-international.com",
+    availableLanguage: ["English", "French"],
+    areaServed: ["US", "BF", "Worldwide"],
+  }],
   description: "Veteran-owned consulting firm bridging West African markets, U.S. federal contracting, and AI-native technology services.",
   founder: { "@type": "Person", name: "Ariel Oubda" },
   knowsLanguage: ["en", "fr"],
@@ -87,6 +97,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className="min-h-full flex flex-col">
         {children}
+        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
       </body>

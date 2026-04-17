@@ -374,7 +374,18 @@ export default function TechPage() {
           <h2 className="text-4xl md:text-6xl font-bold mb-6" style={{ fontFamily: "var(--font-playfair), serif" }}>
             {c.cta.title1} <span className="bg-gradient-to-r from-[#D4A843] to-[#E8C97A] bg-clip-text text-transparent">{c.cta.title2}</span> {c.cta.title3}
           </h2>
-          <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">{c.cta.subtitle}</p>
+          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">{c.cta.subtitle}</p>
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            <a href="tel:+15125768597" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:border-[#D4A843]/50 transition-colors text-sm">
+              <span>📞</span> +1 (512) 576-8597
+            </a>
+            <a href="https://wa.me/15125768597?text=Bonjour%20SIS%20Technology%2C%20je%20voudrais%20discuter%20d%27un%20projet." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366]/10 border border-[#25D366]/40 hover:bg-[#25D366]/20 transition-colors text-sm text-[#25D366]">
+              <span>💬</span> WhatsApp
+            </a>
+            <a href="mailto:info@sisllc-international.com?subject=SIS%20Technology%20Inquiry" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:border-[#D4A843]/50 transition-colors text-sm">
+              <span>✉️</span> info@sisllc-international.com
+            </a>
+          </div>
           <ContactForm lang={lang} source="tech" variant="dark" />
         </div>
       </section>
