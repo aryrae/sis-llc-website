@@ -75,7 +75,7 @@ const orgJsonLd = {
     areaServed: ["US", "BF", "Worldwide"],
   }],
   description: "Veteran-owned consulting firm bridging West African markets, U.S. federal contracting, and AI-native technology services.",
-  founder: { "@type": "Person", name: "Ariel Oubda" },
+  founder: { "@type": "Person", name: "Ary" },
   knowsLanguage: ["en", "fr"],
   identifier: [
     { "@type": "PropertyValue", propertyID: "UEI", value: "WK38ZPSN8FK8" },
